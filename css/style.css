@@ -859,20 +859,10 @@ footer p {
     #hero img {
         width: 100%;
     }
-    h1 .hero__byline {
-        /* font-size: 1.2rem; */
-    }
 
     h1 .hero__title {
         font-size: 2.4rem;
         line-height: 2.4rem;
-    }
-    #hero h3 {
-        /* margin-top: px; */
-        /* font-size: 0.8rem; */
-    }
-    .filled-button {
-        /* font-size: 0.8rem; */
     }
     #kw-1 {
         margin-left: 0;
