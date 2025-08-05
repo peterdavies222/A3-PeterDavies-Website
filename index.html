@@ -1,0 +1,363 @@
+<!-- setting the document type, website language, character set, initial scale.
+Setting my website title to be seen in tabs.
+Setting the website author, description (to be seen in search engines), and keywords for search engines.
+Linking the stylesheet, and setting the icon to be seen in the tab, with alt text. -->
+<!doctype html>
+<html lang="en">
+    <head> 
+        <meta charset="utf-8">     
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+        <title>Nectar Drinks Co</title> 
+
+        <meta name="author" content="Peter Davies">
+        <meta name="description" content="Looking for a tasty, non-alcoholic drink? Wind down - or party hard - with Nectar.">
+        <meta name="keywords" content="Adaptogens, non-alcoholic, nectar, drink">
+
+        <link rel="stylesheet" href="https://use.typekit.net/jzu8mdx.css">
+        <link rel="stylesheet" href="css/style.css">         
+        <link rel="icon" href="images/nectar.png" alt="Nectar logo with blue background."> 
+                
+    </head>
+    
+    <body>
+        <!-- ================================    Navigation    ==================================-->
+
+        <header>
+            <div class="header__upper">
+                <a href="#hero">
+                    <img src="./images/nectar.png" alt="Nectar logo">
+                </a>
+                <button aria-controls="#navigation__links" aria-expanded="false" class="hamburger__button" id="hamburger__button">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 16H4M20 8H4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <nav>
+                <ul data-expanded="false" id="navigation__links">
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#ingredients">Ingredients</a></li>
+                    <li><a href="#story">Our story</a></li>
+                    <li><a href="#stockists">Stockists</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+<!-- ================================    Hero section    ==================================-->
+
+            <section id="hero">
+                    <div class="hero__text">
+                        <h1><span class="hero__byline">goodbye alcohol,</span><br><span class="hero__title">hello nectar.</span></h1>
+                        <h3>Your new, feel-good beverage, packed with adaptogens and hemp extract.</h3>
+                        <a href="#products" class="button filled-button">Explore the range</a>
+                    </div>
+                    <img src="images/hero-comp.png" alt="Four Nectar cans of different flavours, in a fun arrangement.">
+        
+                
+            </section>
+<!-- ================================    Popular drinks    ==================================-->
+           
+            <section id="products">
+<!-- 
+            <h2>Our hottest (chilled) drinks.</h2>
+
+            <div class="products--featured">
+                <article class="product--listing">
+                    <img src="images/watermelon-comp.png" alt="A watermelon flavoured Nectar can, with watermelon wedges around it and a pile of salt in front.">
+                    <div class="product--listing__text">
+                        <h3 class="text-pink">Sea salt & watermelon</h3>
+                        <p>A delicious combination of refreshing, sweet, and salty.</p>
+                    </div>
+                </article>
+                <article class="product--listing">
+                    <img src="images/pineapple-comp.png" alt="A pineapple flavoured Nectar can, with pineapple wedges around it and some basil leaves in front.">
+                    <div class="product--listing__text">
+                        <h3 class="text-green">Pineapple & basil</h3>
+                        <p>A little bit familiar, a little bit new. A whole lot of tasty.</p>
+                    </div>
+                </article>
+            </div>
+
+            <img id="left-emphasis" src="images/emphasis-shape-left.svg" alt="a decorative orange shape of three lines">
+            <img id="right-emphasis" src="images/emphasis-shape-right.svg" alt="a decorative orange shape of three lines"> -->
+
+            <h2>Check it out: Nectar in full.</h2>
+
+            <div class="products--full">
+                <article class="product--listing blueberry">
+                    <img src="images/blueberry-comp.png" alt="A blueberry flavoured Nectar can, with blueberries and mint leaves around it, and a pile of blueberries in front.">
+                    <div class="product--listing__text">
+                        <h3 class="text-darkblue">Blueberry whirl</h3>
+                        <p>A delicious treat packed with West Australian blueberries, mint, and lime.</p>
+                    </div>
+                    <div class="product--box blueberry"></div>
+                </article>
+
+                <article class="product--listing orange">
+                    <img src="images/orange-comp.png" alt="An orange flavoured Nectar can, with orange wedges around it, and a pile of cloves in front.">
+                    <div class="product--listing__text">
+                        <h3 class="text-orange">Tangy orange</h3>
+                        <p>An invigorating blend of fresh orange, spicy cloves, and local botanicals.</p>
+                    </div>
+                    <div class="product--box orange"></div>
+                </article>
+
+                <article class="product--listing watermelon">
+                    <img src="images/watermelon-comp.png" alt="A watermelon flavoured Nectar can, with watermelon wedges around it and a pile of salt in front.">
+                    <div class="product--listing__text">
+                        <h3 class="text-pink">Sea salt & watermelon</h3>
+                        <p>A delicious combination of refreshing, sweet, and salty.</p>
+                    </div>
+                    <div class="product--box watermelon"></div>
+                </article>
+
+                <article class="product--listing pineapple">
+                    <img src="images/pineapple-comp.png" alt="A pineapple flavoured Nectar can, with pineapple wedges around it and some basil leaves in front.">
+                    <div class="product--listing__text">
+                        <h3 class="text-green">Pineapple & basil</h3>
+                        <p>A little bit familiar, a little bit new. A whole lot of tasty.</p>
+                    </div>
+                    <div class="product--box pineapple"></div>
+                </article>
+            </div>
+            <div class="products-scroll-container">
+                <button class="products-scroll" id="products-scrollleft">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 17L10 12L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="products-scroll" id="products-scrollright">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10 7L15 12L10 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+            </div>
+
+            </section>
+<!-- ================================    Ingredients    ==================================-->
+            <section id="ingredients">
+                <div class="ingredients__text">
+                    <h2><span class="title__small">Adaptogens and hemp extract:</span><br>Relaxation, reimagined.</h2>
+                    <p>
+                        With their amazing benefits including stress-relief, health boosts, and improvements to mental clarity,
+                        it's no surprise that adaptogens have been used and enjoyed by humans for thousands of years.
+                        Why not give them a try?
+                    </p>
+                    <p>
+                        Hemp extract's benefits don't stop at stress relief. This super ingredient fights skin issues, 
+                        inflammation, and aging. Who needs alcohol, when you can boost your body whilst having a great time too?
+                    </p>
+                </div>
+                <ul class="ingredients__keywords">
+                    <li id="kw-1">Naturally sourced</li>
+                    <li id="kw-2">Improves mental clarity</li>
+                    <li id="kw-3">Boosts overall health</li>
+                    <li id="kw-4">Creates great times</li>
+                </ul>
+            </section>
+
+<!-- ================================    Our story    ==================================-->
+            
+            <section id="story">
+                <h2>Made by Aussies, for everyone.</h2>
+                <p>
+                    Our mission at Nectar has always been simple: to create high quality, tasty, healthy drinks, 
+                    for anyone looking to have a good time. Why aim for anything less?
+                </p>
+
+                <div class="story__carousel__container">
+
+                    <button class="carousel__button" id="carousel-left">
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 17L10 12L15 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+
+                    <div class="story__carousel">
+
+                        <article class="story__listing" id="SL1">
+                            <img src="images/brewery-image-long.jpg" alt="The Nectar brewery seen in the Margaret river landscape.">
+                            <div>
+                                <h3>A state of the art brewery.</h3>
+                                <p>
+                                    Construction of our brewery began in late 2022, 
+                                    after over two years of planning. Not only are we proud of our products, 
+                                    but also of our epic estate. Come down, check it out, 
+                                    and have a drink or three while you're here!
+                                </p>
+                            </div>
+                        </article>
+                        
+                        <article class="story__listing" id="SL2">
+                            <img src="images/brewer-man-long.jpg" alt="A male Nectar employee holding a container filled with Nectar.">
+                            <div>
+                                <h3>An enthusiastic team.</h3>
+                                <p>
+                                    Our hard working team are the ones that have brought Nectar to life. 
+                                    Working day and night to brew your favourite Nectar drinks — and develop new flavours — 
+                                    it's not hard to see why our drinks just taste so good.
+                                </p>
+                            </div>
+                        </article>
+                        
+                        <article class="story__listing" id="SL3">
+                            <img src="images/farmer-woman-long.jpg" alt="A woman in a farm of low-lying crops.">
+                            <div>
+                                <h3>Natural, locally grown ingredients.</h3>
+                                <p>
+                                    The organic, West Australian grown ingredients are what really set Nectar apart.
+                                    Not only are our hemp extract and adaptogens extracted from South West produce, 
+                                    but all of our ingredients — from blueberries to basil — are grown right here on our doorstep. 
+                                    One sip and you'll taste the difference.
+                                </p>
+                            </div>
+                        </article>
+                            
+                        <article class="story__listing" id="SL4">
+                            <img src="images/friends-image-long.jpg" alt="A group of friends tapping their drinks together.">
+                            <div>
+                                <h3>A whole lot of memories to be made.</h3>
+                                <p>
+                                    And now, it's all up to you! You're only one step away from having a great 
+                                    time with mates. Head on down to your nearest stockist, and experience for yourself the ingenuity 
+                                    that's gone into this amazing range of drinks.
+                                </p>
+                            </div>
+                        </article>
+
+                    </div>
+
+                    <button class="carousel__button" id="carousel-right">
+                        <svg class="chevron" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10 7L15 12L10 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+
+                    </button>
+
+                </div>
+
+            </section>
+
+<!-- ================================    Stockists    ==================================-->
+            <section id="stockists">
+
+                <div class="title">
+                    <h2>Where to find us.</h2>
+                    <a href="#" class="button filled-button">Find my nearest stockest</a>
+                </div>
+
+                <div class="scroller stockists">
+                    <div class="scroller__inner">
+                        <img src="images/Coles_logo.svg.png" alt="Coles logo.">
+                        <img src="images/Woolworths-logo-png.png-2.webp" alt="Woolworths logo.">
+                        <img src="images/170403-ALDI-Australia-Brand-Logo-Landscape.png" alt="Aldi logo.">
+                        <img src="images/692px-IGA_logo.svg.png" alt="IGA logo.">
+                    </div> 
+                </div>
+
+            </section>
+
+<!-- ================================    Contact    ==================================-->
+            <section id="contact">
+            <h2>Get in touch. We'd love to hear from you.</h2>
+
+                <div class="contact__container">
+                    <form>
+                
+                    <label for="email" class="subheading">What's your email?</label><br>
+                    <input type="text" id="email" name="email" placeholder="nectardrinker@nectar.com"><br>
+                
+                    <label for="enquiry" class="subheading">How can we help?</label><br>
+                    <textarea id="enquiry" name="enquiry" placeholder="Type your message here. 2000 characters max, sorry (we don't like to read)."></textarea>
+                
+                    <input class="button filled-button" type="submit" value="Submit">
+                    </form>
+                    <img src="./images/orange-comp.png" alt="Pineapple and basil nectar drink can">
+                </div>
+
+                <footer>
+
+                    <hr>
+
+                    <p>This website has been created as part of an assignment in
+                     an approved course of study for Curtin University and contains copyright material 
+                     not created by the author. All copyright material used remains copyright of the respective 
+                     owners and has been used here pursuant to Section 40 of the Copyright Act 1968 (Commonwealth 
+                     of Australia). No part of this work may be reproduced without consent of the original copyright 
+                     owners. See code comments for references.</p>
+
+
+                </footer>
+
+            </section>
+
+            
+
+        </main>
+
+        <script src="main.js"></script>
+
+
+    </body> 
+
+    <!-- ============================= REFERENCE LIST ================================= 
+
+4zevar. n.d. “Fresh and juicy watermelons and slices icon.” Adobe Stock. Accessed May 21, 2024. https://stock.adobe.com/au/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=0&filters%5Bfree_collection%5D=0&filters%5Bcontent_type%3Aimage%5D=1&k=cartoon+watermelon&order=relevance&safe_search=1&search_page=1&search_type=usertyped&acp=&aco=cartoon+watermelon&get_facets=0&asset_id=480818907.
+
+Aldi Unpacked. n.d. “Brand Assets.” Aldi Australia. Accessed May 10, 2024. https://www.aldiunpacked.com.au/resource-libraries/brand-assets/.
+
+Анастасия Гевко. n.d. “Bright colored seamless pattern with long leaves silhouettes on twigs.” Adobe Stock. Accessed May 21, 2024. https://stock.adobe.com/au/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bcontent_type%3Aimage%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Bis_editorial%5D=0&filters%5Bfree_collection%5D=0&k=herbs+illustration+long&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=herbs+illustration+long&get_facets=0&asset_id=682315294.
+
+Arch Daily. 2019. “River St. Joe Brewery / moss Design.” Arch Daily. https://www.archdaily.com/951307/river-st-joe-brewery-moss-design.
+
+Azure. n.d. “blueberry isolated on white background.” Adobe Stock. Accessed May 10, 2024. https://stock.adobe.com/au/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=blueberries&order=relevance&safe_search=1&search_page=1&search_type=usertyped&acp=&aco=blueberries&get_facets=0&asset_id=172851797.
+
+Belle's. n.d. “pineapple, tropical fruit set vector isolated.” Adobe Stock. Accessed May 21, 2024. https://stock.adobe.com/au/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bcontent_type%3Aimage%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Bis_editorial%5D=0&filters%5Bfree_collection%5D=0&k=pineapple+illustration&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=pineapple+illustration&get_facets=0&asset_id=477240735.
+
+Chat GPT. Prompt: “Tell me a few dot points about adaptogens.” Accessed May 10, 2024. chatgpt.com.
+
+Chat GPT. Prompt: “How do I give elements a drop shadow in CSS.” Accessed May, 2024. chatgpt.com.
+
+cherryandbees. n.d. “woman farmer walking on field.” Adobe Stock. Accessed May 22, 2024. https://stock.adobe.com/au/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=farm+and+farmer&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=farm+and+farmer&get_facets=0&asset_id=467201887.
+
+HASIP. n.d. "Color gradient background, abstract orange grain gradation texture, vector pink noise texture simple art modern." Adobe Stock. Accessed August 3, 2025. https://stock.adobe.com/au/contributor/211949265/hasip?load_type=author&prev_url=detail.
+
+Hera, Jiri. n.d. “sliced watermelon.” Adobe Stock. Accessed May 2024. https://stock.adobe.com/au/Library/urn:aaid:sc:AP:6fd11453-65ef-4164-beee-035fe02fa4e8?asset_id=68840100.
+
+kolonko. n.d. “Orange vector flat slice icon. Orange fruit vitamin C segment half illustration, cartoon clementine.” Adobe Stock. Accessed May 21, 2024. https://stock.adobe.com/au/search?k=cartoon+orange&search_type=usertyped&asset_id=465439557.
+
+Logomyway. n.d. “Woolworths logo and their history.” Logomyway. Accessed May 10, 2024. https://blog.logomyway.com/woolworths-logo/.
+
+Lomb. n.d. “Best friends drinking mojito sitting at cocktail bar restaurant - Friendship concept with young people having drunk fun toasting drinks on happy hour at outdoors pub.” Adobe Stock. Accessed May 10, 2024. https://stock.adobe.com/au/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bis_editorial%5D=0&filters%5Bfree_collection%5D=0&filters%5Bcontent_type%3Aimage%5D=1&k=people+drinking+outdoors&order=relevance&safe_search=1&search_page=1&search_type=usertyped&acp=&aco=people+drinking+outdoors&get_facets=0&asset_id=370959208.
+
+Malyshchyts, Viktar. n.d. “Collection of 16 orange slices isolated on white background.” Adobe Stock. Accessed May 10, 2024. https://stock.adobe.com/au/Library/urn:aaid:sc:AP:6fd11453-65ef-4164-beee-035fe02fa4e8?asset_id=108822757.
+
+margo555. n.d. “Carnation (spices) isolated.” Adobe Stock. Accessed May 10, 2024. https://stock.adobe.com/au/search?load_type=search&is_recent_search=&search_type=usertyped&k=cloves&native_visual_search=&similar_content_id=&asset_id=46433885.
+
+microphoto1. n.d. “Vector aluminium beer and slim soda can mock up blank template. Juice, soda, beer jar blank isolated on white background. Aluminum can for design. Realistic aluminum cans.” https://stock.adobe.com/au/Library/urn:aaid:sc:AP:6fd11453-65ef-4164-beee-035fe02fa4e8?asset_id=327486605.
+
+Miltsova, Olga. n.d. “basil leaves isolated.” Adobe Stock. Accessed May 2024. https://stock.adobe.com/au/search?load_type=search&is_recent_search=&search_type=usertyped&k=basil&native_visual_search=&similar_content_id=&asset_id=59219210.
+
+nataliazakharova. n.d. “Fresh mint leaves pattern isolated on white background, top view. Close up of peppermint.” Adobe Stock. Accessed May 10. 2024. https://stock.adobe.com/au/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bcontent_type%3Aimage%5D=1&filters%5Bis_editorial%5D=0&k=mint&order=relevance&safe_search=1&search_page=1&search_type=usertyped&acp=&aco=mint&get_facets=0&asset_id=225121835.
+
+Prostock-studio. n.d. “Brewery, work in warehouse, modern strong worker brewer loads ingredients.” Adobe Stock. Accessed May 22, 2024. https://stock.adobe.com/au/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bcontent_type%3Aimage%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Bis_editorial%5D=0&filters%5Bfree_collection%5D=0&k=brewery+workers&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=brewery+workers&get_facets=0&asset_id=478741439.
+
+the_lightwriter. n.d. “heap of salt isolated on white background.” Adobe Stock. Accessed May 2024. https://stock.adobe.com/au/Library/urn:aaid:sc:AP:6fd11453-65ef-4164-beee-035fe02fa4e8?asset_id=214084425.
+
+W3schools. n.d. “How TO - Contact Form.” W3Schools. Accessed May 21, 2024. https://www.w3schools.com/howto/howto_css_contact_form.asp.
+xamtiw. n.d. “Falling blueberry isolated on white background with clipping path.” Adobe Stock. Accessed May 10, 2024. https://stock.adobe.com/au/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bcontent_type%3Aimage%5D=1&k=blueberries&order=relevance&safe_search=1&search_page=1&search_type=usertyped&acp=&aco=blueberries&get_facets=0&asset_id=274210750.
+
+Wikipedia. 2008. “File:Coles logo.svg.” Wikipedia. https://en.m.wikipedia.org/wiki/File:Coles_logo.svg.
+
+Wikipedia. n.d. “File:IGA logo.svg.” Wikipedia. Accessed May 10, 2024. https://en.m.wikipedia.org/wiki/File:IGA_logo.svg.
+
+xamtiw. n.d. “Falling blueberry isolated on white background with clipping path.” Adobe Stock. Accessed May 2024. https://stock.adobe.com/au/Library/urn:aaid:sc:AP:6fd11453-65ef-4164-beee-035fe02fa4e8?asset_id=274210750.
+
+yutthasak. n.d. “blueberries.” Adobe Stock. Accessed May 21, 2024. https://stock.adobe.com/au/search?filters%5Bcontent_type%3Aphoto%5D=1&filters%5Bcontent_type%3Aillustration%5D=1&filters%5Bcontent_type%3Azip_vector%5D=1&filters%5Bcontent_type%3Avideo%5D=1&filters%5Bcontent_type%3Atemplate%5D=1&filters%5Bcontent_type%3A3d%5D=1&filters%5Bfetch_excluded_assets%5D=1&filters%5Binclude_stock_enterprise%5D=1&filters%5Bcontent_type%3Aimage%5D=1&filters%5Bcontent_type%3Aaudio%5D=0&filters%5Bis_editorial%5D=0&filters%5Bfree_collection%5D=0&k=blueberry+illustration&order=relevance&safe_search=1&limit=100&search_page=1&search_type=usertyped&acp=&aco=blueberry+illustration&get_facets=0&asset_id=569765572.
+
+    -->
+</html>
