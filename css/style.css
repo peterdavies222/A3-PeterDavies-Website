@@ -45,8 +45,8 @@ html {
 }
 
 @font-face {
-    font-family: "raspberie";
-    src: url(../fonts/raspberie-font.ttf);
+    font-family: 'avenir-next';
+    src: url(../fonts/avenir-next-ultralight.ttf);
 }
 
 @font-face {
@@ -107,10 +107,23 @@ header {
     transition: all 0.2s;
 }
 
+header > div > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 header > div > a > img {
     width: 60px;
     aspect-ratio: 1;
     border-radius: 50%;
+}
+
+header > div > a > span {
+    font-family: 'avenir-next';
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
 }
 
 nav ul {
