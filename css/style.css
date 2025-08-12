@@ -67,6 +67,12 @@ h1, h2, h3 {
     margin: 0;
 }
 
+h1 {
+    white-space: nowrap;
+    position: relative;
+    z-index: 100;
+}
+
 h2 {
     font-size: 2.5rem;
     margin-bottom: var(--block-section-padding);
@@ -793,8 +799,11 @@ footer p {
     #story > p {
         width: 100%;
     }
+    .story__carousel__container {
+        position: relative;
+    }
     .story__listing {
-        position: static;
+        position: relative;
         height: fit-content;
     }
     .story__listing::before {
@@ -812,6 +821,17 @@ footer p {
     }
     .story__listing h3 {
         margin-block: 30px 15px;
+    }
+    .carousel__button {
+        align-self: center;
+        position: absolute;
+        top: 126px;
+        z-index: 100;
+        background-color: var(--lightbeige);
+        opacity: 70%;
+    }
+    .carousel__button.inactive {
+        opacity: 50%;
     }
     .contact__container {
         gap: 60px;
@@ -863,6 +883,10 @@ footer p {
     #story > p {
         width: 100%;
     }
+    .title {
+        flex-direction: column;
+        gap: 30px;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -891,6 +915,33 @@ footer p {
     }
     .contact__container img {
         display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #hero {
+        margin-inline: 0;
+    }
+    .carousel__button {
+        width: 45px;
+    }
+    .carousel__button .chevron {
+        transform: scale(0.6);
+    }
+    .story__carousel__container {
+        width: calc(100% + 2 * var(--inline-page-margins));
+        margin-left: calc(-1 * var(--inline-page-margins));
+        position: relative;
+    }
+    .story__carousel {
+        gap: 0;
+    }
+    .story__listing img {
+        border-radius: 0;
+    }
+    .story__listing div {
+        padding-inline: var(--inline-page-margins);
+        width: auto;
     }
 }
 
