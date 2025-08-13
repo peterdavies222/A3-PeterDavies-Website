@@ -154,6 +154,39 @@ nav ul a:hover {
     display: none;
 }
 
+.hamburger__button .line {
+    --duration: 200ms;
+    transition:
+        y var(--duration) ease-out var(--duration),
+        rotate var(--duration) ease-in,
+        opacity 0ms var(--duration);
+    transform-origin: center;
+}
+
+.hamburger__button .top {
+    --rotation: 45deg;
+}
+
+.hamburger__button .bottom {
+    --rotation: -45deg;
+}
+
+.hamburger__button[aria-expanded="true"] .line {
+    transition:
+        y var(--duration) ease-in,
+        rotate var(--duration) ease-out var(--duration),
+        opacity 0ms var(--duration);
+}
+
+.hamburger__button[aria-expanded="true"] :is(.top, .bottom) {
+    y: 47;
+    rotate: var(--rotation);
+}
+
+.hamburger__button[aria-expanded="true"] .middle {
+    opacity: 0;
+}
+
 /*============================ Hero section =============================*/
 
 #hero {
