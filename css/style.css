@@ -189,7 +189,7 @@ nav ul a:hover {
 } */
 
 .hamburger__button .line {
-    --duration: 200ms;
+    --duration: 300ms;
     transition: all var(--duration);
     transform-origin: 50%;
 }
