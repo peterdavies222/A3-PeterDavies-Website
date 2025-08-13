@@ -102,11 +102,13 @@ function toggleNav() {
     function open() {
         hamburgerIcon.setAttribute('aria-expanded', 'true')
         navLinks.setAttribute('data-expanded', 'true')
+        navLinks.style.maxHeight = navLinks.scrollHeight + "px"
     }
 
     function close() {
         hamburgerIcon.setAttribute('aria-expanded', 'false')
         navLinks.setAttribute('data-expanded', 'false')
+        navLinks.style.maxHeight = 0
     }
 
     isExpanded ? close() : open()

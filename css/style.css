@@ -110,7 +110,7 @@ header {
     background-color: #FFFFFF00;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    transition: all 0.2s;
+    /* transition: all 0.2s; */
 }
 
 header > div > a {
@@ -138,7 +138,7 @@ nav ul {
     list-style-type: none;
     gap: 15px;
     margin: 0;
-    transition: all 0.2s;
+    transition: max-height 0.2s;
 }
 
 nav ul a {
@@ -154,7 +154,7 @@ nav ul a:hover {
     display: none;
     color: var(--brown);
 }
-
+/* 
 .hamburger__button .line {
     --duration: 200ms;
     transition:
@@ -186,6 +186,37 @@ nav ul a:hover {
 
 .hamburger__button[aria-expanded="true"] .middle {
     opacity: 0;
+} */
+
+.hamburger__button .line {
+    --duration: 200ms;
+    transition: all var(--duration);
+    transform-origin: 50%;
+}
+
+.hamburger__button .top {
+    --rotation: 0;
+    --openOpacity: 0;
+}
+
+.hamburger__button .middle.a {
+    --rotation: 45deg;
+    --openOpacity: 1;
+}
+
+.hamburger__button .middle.b {
+    --rotation: -45deg;
+    --openOpacity: 1;
+}
+
+.hamburger__button .bottom {
+    --rotation: 0;
+    --openOpacity: 0;
+}
+
+.hamburger__button[aria-expanded="true"] .line {
+    transform: scale(1.2) rotate(var(--rotation));
+    opacity: var(--openOpacity);
 }
 
 /*============================ Hero section =============================*/
@@ -758,7 +789,6 @@ footer p {
         width: 100%;
     }
     header ul[data-expanded="true"] {
-        max-height: 218px;
         padding-bottom: 30px;
     }
     header:has(ul[data-expanded="true"]) {
