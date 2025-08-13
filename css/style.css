@@ -152,6 +152,7 @@ nav ul a:hover {
 
 .hamburger__button {
     display: none;
+    color: var(--brown);
 }
 
 .hamburger__button .line {
