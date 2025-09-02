@@ -63,23 +63,24 @@ const scrollers = document.querySelectorAll('.scroller')
 if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
     addAnimation()
 }
-
-function addAnimation() {
-    scrollers.forEach(scroller => {
-        scroller.setAttribute('data-animated', true)
-
-        const scrollerInner = scroller.querySelector('.scroller__inner')
-        const scrollerContent = Array.from(scrollerInner.children)
-
-        for (let i = 0; i < 2; i++) {
-            scrollerContent.forEach(item => {
-                const duplicatedItem = item.cloneNode(true)
-                duplicatedItem.setAttribute("aria-hidden", true)
-                scrollerInner.appendChild(duplicatedItem)
-            })
-        }
-    })
-}
+document.addEventListener("DOMContentLoaded", ()=> {
+    function addAnimation() {
+        scrollers.forEach(scroller => {
+            scroller.setAttribute('data-animated', true)
+    
+            const scrollerInner = scroller.querySelector('.scroller__inner')
+            const scrollerContent = Array.from(scrollerInner.children)
+    
+            for (let i = 0; i < 2; i++) {
+                scrollerContent.forEach(item => {
+                    const duplicatedItem = item.cloneNode(true)
+                    duplicatedItem.setAttribute("aria-hidden", true)
+                    scrollerInner.appendChild(duplicatedItem)
+                })
+            }
+        })
+    }
+})
 
 const products = document.querySelector(".products--full")
 const productsScrollRight = document.getElementById("products-scrollright")
