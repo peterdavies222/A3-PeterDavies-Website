@@ -254,6 +254,7 @@ nav ul a:hover {
     border-radius: 50%;
     aspect-ratio: 8.4;
     z-index: 1;
+    transform: translate3d(0, 0, 0);
 }
 
 .h-shadow.animates {
