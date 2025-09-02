@@ -14,6 +14,7 @@ storyLeft.classList.add('inactive')
 window.addEventListener('resize', ()=> {
     storyListingWidth = document.querySelector(".story__listing").offsetWidth
     // console.log(storyListingWidth)
+    resetNav()
 })
 
 storyRight.addEventListener('click', ()=> {
@@ -134,3 +135,28 @@ function closeNav() {
         return
     }
 }
+
+let prevWidth = window.innerWidth
+
+function resetNav() {
+    let hamburgerIcon = document.getElementById("hamburger__button")
+    let navLinks = document.getElementById("navigation__links")
+
+    let currentWidth = window.innerWidth
+    if(prevWidth < 993 && currentWidth >= 993) {
+        console.log('going to large screen')
+        hamburgerIcon.setAttribute('aria-expanded', 'false')
+        navLinks.setAttribute('data-expanded', 'false')
+        navLinks.style.maxHeight = navLinks.scrollHeight + "px"
+    }
+    if (prevWidth >= 993 && currentWidth < 993) {
+        navLinks.style.maxHeight = 0
+        console.log('going to small screen')
+    }
+    prevWidth = currentWidth
+}
+
+/** when the window changes size
+ * if the window becomes desktop size, then set the nav maxheight to auto
+ * else if the window becomes (ie, it was large, now its small) smaller size, then set the nav maxheight to 0
+ */
