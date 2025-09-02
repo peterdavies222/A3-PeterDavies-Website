@@ -126,7 +126,11 @@ navLinks.forEach((link)=> {
 function closeNav() {
     let hamburgerIcon = document.getElementById("hamburger__button")
     let navLinks = document.getElementById("navigation__links")
-    hamburgerIcon.setAttribute('aria-expanded', 'false')
-    navLinks.setAttribute('data-expanded', 'false')
-    navLinks.style.maxHeight = 0
+    if (hamburgerIcon.getAttribute('aria-expanded') === true) {
+        hamburgerIcon.setAttribute('aria-expanded', 'false')
+        navLinks.setAttribute('data-expanded', 'false')
+        navLinks.style.maxHeight = 0
+    } else {
+        return
+    }
 }
