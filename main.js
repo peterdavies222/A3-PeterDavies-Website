@@ -57,7 +57,7 @@ storyLeft.addEventListener('click', ()=> {
     }
 })
 
-// scrollers
+// scrollers (+animation)
 
 const scrollers = document.querySelectorAll('.scroller')
 
@@ -65,6 +65,14 @@ document.addEventListener("DOMContentLoaded", ()=> {
     if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
         addAnimation()
     }
+    let hShadows = document.querySelectorAll('.h-shadow')
+    hShadows.forEach(shadow => {
+        shadow.classList.add('animates')
+    })
+    let hCans = document.querySelectorAll('.h-can')
+    hCans.forEach(can => {
+        can.classList.add('animates')
+    })
 })
 
 function addAnimation() {

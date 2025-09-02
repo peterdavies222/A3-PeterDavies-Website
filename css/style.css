@@ -254,6 +254,9 @@ nav ul a:hover {
     border-radius: 50%;
     aspect-ratio: 8.4;
     z-index: 1;
+}
+
+.h-shadow.animates {
     animation-duration: 1000ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -266,6 +269,9 @@ nav ul a:hover {
     width: 17%;
     filter: blur(1cqw);
     opacity: 50%;
+}
+
+.h-shadow-1.animates {
     animation-name: shadow-1;
     animation-delay: 750ms;
 }
@@ -284,6 +290,9 @@ nav ul a:hover {
     width: 18%;
     filter: blur(1.2cqw);
     opacity: 70%;
+}
+
+.h-shadow-3.animates {
     animation-name: shadow-3;
     animation-delay: 1500ms;
 }
@@ -294,6 +303,9 @@ nav ul a:hover {
     width: 16%;
     filter: blur(1.1cqw);
     opacity: 80%;
+}
+
+.h-shadow-4.animates {
     animation-name: shadow-4;
 }
 
@@ -329,6 +341,9 @@ nav ul a:hover {
 .h-can {
     position: absolute;
     width: 20%;
+}
+
+.h-can.animates {
     animation-duration: 1000ms;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -341,6 +356,9 @@ nav ul a:hover {
     top: 10%;
     left: 14%;
     z-index: 2;
+}
+
+.h-can-1.animates {
     animation-name: can-float-1;
     animation-delay: 750ms;
 }
@@ -358,6 +376,9 @@ nav ul a:hover {
     left: 51%;
     top: 8%;
     z-index: 4;
+}
+
+.h-can-3.animates {
     animation-name: can-float-3;
     animation-delay: 1500ms;
 }
@@ -367,6 +388,9 @@ nav ul a:hover {
     transform: rotate(-5deg);
     left: 72%;
     top: 17%;
+}
+
+.h-can-4.animates {
     animation-name: can-float-4;
 }
 
