@@ -1,4 +1,4 @@
-console.log("JS workign")
+console.log("JS working")
 
 const storyLeft = document.getElementById("carousel-left")
 const storyRight = document.getElementById("carousel-right")
@@ -9,11 +9,11 @@ let storyListingWidth = document.querySelector(".story__listing").offsetWidth
 let storyPosition = 1
 storyLeft.classList.add('inactive')
 
-console.log(storyListingWidth)
+// console.log(storyListingWidth)
 
 window.addEventListener('resize', ()=> {
     storyListingWidth = document.querySelector(".story__listing").offsetWidth
-    console.log(storyListingWidth)
+    // console.log(storyListingWidth)
 })
 
 storyRight.addEventListener('click', ()=> {
@@ -126,7 +126,7 @@ navLinks.forEach((link)=> {
 function closeNav() {
     let hamburgerIcon = document.getElementById("hamburger__button")
     let navLinks = document.getElementById("navigation__links")
-    if (hamburgerIcon.getAttribute('aria-expanded') === true) {
+    if (hamburgerIcon.getAttribute('aria-expanded')) {
         hamburgerIcon.setAttribute('aria-expanded', 'false')
         navLinks.setAttribute('data-expanded', 'false')
         navLinks.style.maxHeight = 0
