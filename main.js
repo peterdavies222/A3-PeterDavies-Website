@@ -117,13 +117,13 @@ function toggleNav() {
 const navLinks = document.querySelectorAll("nav ul li")
 navLinks.forEach((link)=> {
     link.addEventListener('click', ()=> {
-        closeNav()
+        toggleNav()
     })
 })
 
-function closeNav() {
-    let hamburgerIcon = document.getElementById("hamburger__button")
-    let navLinks = document.getElementById("navigation__links")
-    hamburgerIcon.setAttribute('aria-expanded', 'false')
-    navLinks.setAttribute('data-expanded', 'false')
-}
+// function closeNav() {
+//     let hamburgerIcon = document.getElementById("hamburger__button")
+//     let navLinks = document.getElementById("navigation__links")
+//     hamburgerIcon.setAttribute('aria-expanded', 'false')
+//     navLinks.setAttribute('data-expanded', 'false')
+// }
